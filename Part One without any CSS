@@ -1,0 +1,57 @@
+# Application-Form
+created this form for coursera project
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dating Application Form Part 1</title>
+	<script type="text/javascript" src="https://ff.kis.scr.kaspersky-labs.com/7E45AB43-A26C-F444-AE46-E4F34E75C8A9/main.js" charset="UTF-8"></script><script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</head>
+<body>
+	<section>
+	<h1>Black & White Part 1</h1>
+		<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Image Info</legend>
+				<label for="f">UploaImage: </label><input type="file" name="f" multiple accept="image/*"><br>
+				<label for="img">preview Image: </label><img name="img" src="" alt="" id="preview" width="100px">
+			</fieldset>
+			<fieldset>
+				<legend>Personal Informaiton</legend>
+				<label for="name">FirstName: </label><input type="text" value="First Name" name="name"> <br>
+        <label for="name">Last Name: </label><input type="text" value="Last name" name="name"> <br>
+				<label for="male">Male: </label><input type="radio" name="male">Male <input type="radio" name="female">Fmale <br>
+				<label for="numer">Age: </label><input type="number" name="number"> <br>
+				<label for="date">Date of birth: </label><input type="date" name="date"> <br>
+				<label for="color">Favorite color: </label><input type="color" name="color"> <br>
+				<label for="country">Which country: </label>
+					<select name="country" id="">
+						<option value="country1">Not country</option>
+						<option value="country2">Russia</option>
+						<option value="country3">USA</option>
+						<option value="country4">India</option>
+						<option value="country5">Canada</option>
+						<option value="country6">China</option>
+            <option value="country6">UK</option>
+            <option value="country6">Bangladesh</option>
+            <option value="country6">Japan</option>
+					</select>
+			</fieldset>
+			<fieldset>
+				<legend>Your Indicators</legend>
+				<label for="height">Height: </label><span>short</span><input type="range" min="0" max="100" name="height"><span>tall</span> <br>
+				<label for="salsry">Salary: </label><span>Poor</span><input type="range" min="0" max="100" name="salary"><span>Rich</span>
+			</fieldset>
+			<fieldset>
+				<legend>Contact Information</legend>
+				<label for="email">Your Email: </label><input type="email" name="email"> <br>
+				<label for="tel">Mobile: </label><input type="tel" name="tel"> <br>
+				<label for="address">Address: </label><textarea name="address" id="" cols="40" rows="3"></textarea> <br>
+				<label for="em">Method to contact you: </label><input type="checkbox" name="em">Email <input type="checkbox">Mobile <input type="checkbox">In-app chat
+			</fieldset>
+			<button type="submit">Submit</button>
+		</form>
+	</section>
+</body>
+</html>
