@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dating Application Form Part 2</title>
+	<style type="text/css">
+		fieldset {
+			width:720px;
+			background: lightyellow;
+			border: 10px solid lightblue;
+			margin-bottom: 10px;
+		}
+		label {
+			width: 180px;
+      display: inline-block;
+			text-align: right;
+			vertical-align: top;
+		}
+		label radio {
+			width: auto;
+		}
+		label:hover {
+		  font-size: 1.3em;
+		}
+		.span-red {
+			min-width: 100px;
+			padding: 10px;
+			color:#fff;
+			background-color: lightgreen;
+		}
+		.span-purple {
+			padding: 10px;
+			color: #fff;
+			background-color: grey;
+		}
+		textarea {
+			width: 360px;
+			height: 50px;
+		}
+	</style>
+<script type="text/javascript" src="https://ff.kis.scr.kaspersky-labs.com/7E45AB43-A26C-F444-AE46-E4F34E75C8A9/main.js" charset="UTF-8"></script></head>
+<body>
+	<section>
+	<h1>Color Part 2</h1>
+		<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Image Info</legend>
+				<label for="f">Upload image: </label><input type="file" name="f" multiple accept="image/*"><br>
+				<label for="img">Preview Image: </label><img name="img" src="" alt="" id="" width="100px">
+			</fieldset>
+			<fieldset>
+				<legend>Your Personal Details</legend>
+				<label for="name">First Name: </label><input type="text" value="Your First name" name="name"> <br>
+        				<label for="name">Last Name: </label><input type="text" value="Your Last name" name="name"> <br>
+
+				<label for="male">Male: </label><input type="radio" name="male">Male <input type="radio" name="female">Fmale <br>
+				<label for="number">Age: </label><input type="number" name="number"> <br>
+				<label for="date">Date of birth: </label><input type="date" name="date" value="dd/mm/yyyy"> <br>
+				<label for="color">Favorite color: </label><input type="color" name="color"> <br>
+				<label for="country">Which country: </label>
+					<select name="country" id="">
+						<option value="country1">Not country</option>
+						<option value="country2">Russia</option>
+						<option value="country3">USA</option>
+						<option value="country4">India</option>
+						<option value="country5">Canada</option>
+						<option value="country6">China</option>
+					</select>
+			</fieldset>
+			<fieldset>
+				<legend>Your Indicators</legend>
+				<label for="height">Height: </label><span class="span-red">short</span><input type="range" min="0" max="100" name="height"><span class="span-purple"> tall </span> <br>
+				<label for="salsry">Salary: </label><span class="span-red">Poor</span><input type="range" min="0" max="100" name="salary"><span class="span-purple">Rich</span>
+			</fieldset>
+			<fieldset>
+				<legend>Your Contact Information</legend>
+				<label for="email">Email: </label><input type="email" name="email"> <br>
+				<label for="tel">Mobile: </label><input type="tel" name="tel"> <br>
+				<label for="address">Address: </label><textarea name="address" id="" cols="40" rows="3"></textarea> <br>
+				<label for="em">Method to contact you: </label><input type="checkbox" name="em">Email <input type="checkbox">Mobile <input type="checkbox">In-app chat
+			</fieldset>
+			<button class type="submit">Submit</button>
+		</form>
+	</section>
+</body>
+</html>
